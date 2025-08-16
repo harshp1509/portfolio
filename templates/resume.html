@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Resume - Harshkumar Patel{% endblock %}
+
+{% block page_styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="bg-white p-4 p-md-5 rounded-3 shadow-sm">
+        <!-- Resume Header -->
+        <div class="text-center border-bottom pb-4 mb-5">
+            <h1 class="display-4 fw-bold">Harshkumar Patel</h1>
+            <p class="lead text-muted">Physical AI Developer</p>
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-3">
+                <span><i class="fas fa-envelope me-2"></i>hhpatel1509@gmail.com</span>
+                <span><i class="fas fa-phone me-2"></i>+91 7984702807</span>
+                <span><i class="fas fa-map-marker-alt me-2"></i>Gujarat, India</span>
+            </div>
+            <a href="{{ url_for('static', filename='documents/resume.pdf') }}" class="btn btn-primary mt-4" download>
+                <i class="fas fa-download me-2"></i>Download Resume
+            </a>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="mb-5">
+            <h2 class="h4 fw-bold border-bottom pb-2 mb-3"><i class="fas fa-cogs text-primary me-2"></i>Skills</h2>
+            <div>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Python</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">C</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">ML</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Java</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Computer Vision</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">C++</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">React</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">MongoDB</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">ExpressJS</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">NodeJS</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Python- web tech stack</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Linux</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">ROS</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Reinforcement Learning</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Nvidia Robotic stack</span>
+
+            </div>
+        </div>
+
+        <!-- Platforms & Tools Section -->
+        <div class="mb-5">
+            <h2 class="h4 fw-bold border-bottom pb-2 mb-3"><i class="fas fa-tools text-primary me-2"></i>Platforms & Tools</h2>
+            <div>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">MySQL</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">MongoDB</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Nvidia Isaac Sim</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Nvidia Isaac Lab</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Blender</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">Gazebo</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">RViz</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">MuJoCo</span>
+                <span class="badge bg-secondary fs-6 fw-normal m-1 p-2">PX4 -Drone controller</span>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="mb-5">
+            <h2 class="h4 fw-bold border-bottom pb-2 mb-4"><i class="fas fa-briefcase text-primary me-2"></i>Experience</h2>
+            <div class="resume-item mb-4">
+                <div class="d-flex justify-content-between">
+                    <h3 class="h5 mb-0">Robotic Engineer</h3>
+                    <span class="text-muted">June,2024 - Present</span>
+                </div>
+                <p class="text-muted fst-italic">Capgemini</p>
+                <p>Developing and implementing advanced robotics solutions by programming robotic systems with ROS. Training and fine-tuning reinforcement learning policies utilizing the NVIDIA Isaac robotics stack, with a focus on simulation-to-real deployment. Currently leading the integration and testing of these policies on the Unitree G1 humanoid robot.</p>
+            </div>
+            <div class="resume-item">
+                <div class="d-flex justify-content-between">
+                    <h3 class="h5 mb-0">Software Developer</h3>
+                    <span class="text-muted">Feb, 2024 - May, 2024</span>
+                </div>
+                <p class="text-muted fst-italic">Bisag-N , Ministry of Electronic and IT .</p>
+                <p>Contributed to the development of secure government websites and applications using a full-stack approach with Java, ReactJS, and NodeJS. Managed database operations and ensured effective data management with SQLite and SQL Server. Played a key role in implementing and maintaining security protocols to protect web assets.</p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div>
+            <h2 class="h4 fw-bold border-bottom pb-2 mb-4"><i class="fas fa-graduation-cap text-primary me-2"></i>Education</h2>
+            <div class="resume-item mb-4">
+                <h4 class="h5">Bachelor of Technology in Computer Science</h4>
+                <p class="text-muted mb-1">Pandit Deendayal Enery University | 2019 - 2023</p>
+                <p>CGPA of 9.55/10.0</p>
+            </div>
+            <div class="resume-item">
+                <h4 class="h5">H.S.C.</h4>
+                <p class="text-muted mb-1">Knowledge High School | 2018 - 2019</p>
+                <p>Percentage: 81% (PCM)</p>
+            </div>
+            <div class="resume-item">
+                <h4 class="h5">S.S.C.</h4>
+                <p class="text-muted mb-1">Knowledge High School | 2016 - 2017</p>
+                <p>Percentage: 87%</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+body {
+    background-color: #f8f9fa; /* A light grey background to make the white card stand out */
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.map-container {
+    border-radius: 0.25rem;
+    overflow: hidden; /* Ensures the map corners are rounded */
+}
